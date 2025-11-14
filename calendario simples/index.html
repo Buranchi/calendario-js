@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Calendário em Java Script">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendário Simples</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <button type="button" class="header__nav__btn header__nav__btn--prev" onclick="alterMonth(-1)">
+                &#x279C;
+            </button>
+
+            <h1 class="header__nav__title">Carregando...</h1>
+
+            <button type="button" class="header__nav__btn header__nav__btn--next" onclick="alterMonth(+1)">
+                &#x279C;
+            </button>
+        </nav>
+        <div class="header__actions">
+            <button type="button" class="header__actions__btn" onclick="print()" title="Imprimir mês atual">
+                Imprimir
+            </button>
+        </div>
+    </header>
+    <main class="content">
+        <table class="calendar">
+            <thead class="calendar__head">
+                <th scope="col">Domingo</th>
+                <th scope="col">Segunda</th>
+                <th scope="col">Terça</th>
+                <th scope="col">Quarta</th>
+                <th scope="col">Quinta</th>
+                <th scope="col">Sexta</th>
+                <th scope="col">Sábado</th>
+            </thead>
+            <tbody class="calendar__body"></tbody>
+        </table>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
